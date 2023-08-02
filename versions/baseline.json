@@ -1,0 +1,8 @@
+{
+    "default":{
+        "ffmpeg": {
+            "baseline": "4.4.3",
+            "port-version": 0
+        }
+    }
+}
