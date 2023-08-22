@@ -1,6 +1,10 @@
 if(VCPKG_TARGET_IS_WINDOWS)
     set(PATCHES 0017-Patch-for-ticket-9019-CUDA-Compile-Broken-Using-MSVC.patch)  # https://trac.ffmpeg.org/ticket/9019
 endif()
+if("rkmpp" IN_LIST FEATURES)
+    set(RKMPP_PATCHES "0025-support-rkmpp.patch")
+endif()
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO ffmpeg/ffmpeg
@@ -27,6 +31,7 @@ vcpkg_from_github(
         0022-fix-m1-hardware-decode-nal-bits.patch # remove in next version
         0023-fix-qsv-init.patch # remove in next version (5.x)
 		0024-fix-flv-support-hevc.patch
+		${RKMPP_PATCHES}
 )
 
 if (SOURCE_PATH MATCHES " ")
@@ -110,6 +115,10 @@ set(_csc_PROJECT_PATH ffmpeg)
 file(REMOVE_RECURSE ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-dbg ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-rel)
 
 set(FFMPEG_PKGCONFIG_MODULES libavutil)
+
+if("rkmpp" IN_LIST FEATURES)
+	set(OPTIONS "${OPTIONS} --enable-rkmpp --enable-libdrm")
+endif()
 
 if("nonfree" IN_LIST FEATURES)
     set(OPTIONS "${OPTIONS} --enable-nonfree")
