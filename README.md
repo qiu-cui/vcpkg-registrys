@@ -6,6 +6,8 @@
 
 - n4.4.3#1 基于4.4.3#0 添加rkmpp-3588的patch
 
+- n5.1.2#0 基于vcpkg的5.1.2的版本加上flv支持hevc的patch
+
   ```
   //使用方式：在项目根目录添加两个文件"vcpkg.json","vcpkg-configuration.json"
   //编译rkmpp版本示例
