@@ -37,8 +37,8 @@
       "registries": [
           {
               "kind":"git",
-              "repository":"https://github.com/qiu-cui/vcpkg-ports",
-              "baseline":"ee75e89c61ae8f294613780ff9283c27ee1d3a34",
+              "repository":"http://git-inc.ovopark.com:6780/system/threadlibrary/vcpkg-registrys",
+              "baseline":"dcaa7d678033ea647b1fbf663d837cfc0f7c1843",
               "packages":["ffmpeg"]
           }
       ]
