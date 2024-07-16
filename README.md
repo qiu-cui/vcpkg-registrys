@@ -19,13 +19,20 @@
               "features":[
                   "rkmpp",
               ]
+          },
+          {
+            "name":"log-cpp"
           }
       ],
   	"overrides":[
   		{
   			"name":"ffmpeg",
   			"version-string":"4.4.3#1"
-  		}
+  		},
+        {
+            "name":"log-cpp",
+            "version-string":"0.0.1#0"
+        }
   	]
   }
   
@@ -41,7 +48,7 @@
               "kind":"git",
               "repository":"http://git-inc.ovopark.com:6780/system/threadlibrary/vcpkg-registrys",
               "baseline":"dcaa7d678033ea647b1fbf663d837cfc0f7c1843",
-              "packages":["ffmpeg"]
+              "packages":["ffmpeg","log-cpp"]
           }
       ]
   }
