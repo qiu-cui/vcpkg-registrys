@@ -1,6 +1,7 @@
 {
     "name": "log-cpp",
     "version": "0.0.1",
+    "port-version": 1,
     "homepage": "http://git-inc.ovopark.com:6780/system/threadlibrary/log-cpp",
     "description": "A sample C++ library for log",
     "license": "MIT",
