@@ -13,7 +13,7 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL http://git-inc.ovopark.com:6780/system/threadlibrary/log-cpp
-    REF b6ca094c96f04f9339f7e7665c75c26097f1fae8
+    REF 609576f28596de568781bd9fbed0304bbf12776f
 )
 
 vcpkg_cmake_configure(
