@@ -8,6 +8,10 @@
 
 - n5.1.2#0 基于vcpkg的5.1.2的版本加上flv支持hevc的patch
 
+## log-cpp
+
+- 0.0.1#0 初始版本
+
   ```
   //使用方式：在项目根目录添加两个文件"vcpkg.json","vcpkg-configuration.json"
   //编译rkmpp版本示例
