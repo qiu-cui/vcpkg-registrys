@@ -1,0 +1,19 @@
+{
+    "name": "log-cpp",
+    "version": "0.0.1",
+    "homepage": "http://git-inc.ovopark.com:6780/system/threadlibrary/log-cpp",
+    "description": "A sample C++ library for log",
+    "license": "MIT",
+    "dependencies": [
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        },
+        "spdlog",
+        "sqlitecpp"
+    ]
+}

@@ -8,6 +8,10 @@
 
 - n5.1.2#0 基于vcpkg的5.1.2的版本加上flv支持hevc的patch
 
+## log-cpp
+
+- 0.0.1#0 初始版本
+
   ```
   //使用方式：在项目根目录添加两个文件"vcpkg.json","vcpkg-configuration.json"
   //编译rkmpp版本示例
@@ -19,13 +23,20 @@
               "features":[
                   "rkmpp",
               ]
+          },
+          {
+            "name":"log-cpp"
           }
       ],
   	"overrides":[
   		{
   			"name":"ffmpeg",
   			"version-string":"4.4.3#1"
-  		}
+  		},
+        {
+            "name":"log-cpp",
+            "version-string":"0.0.1#0"
+        }
   	]
   }
   
@@ -41,7 +52,7 @@
               "kind":"git",
               "repository":"http://git-inc.ovopark.com:6780/system/threadlibrary/vcpkg-registrys",
               "baseline":"dcaa7d678033ea647b1fbf663d837cfc0f7c1843",
-              "packages":["ffmpeg"]
+              "packages":["ffmpeg","log-cpp"]
           }
       ]
   }
