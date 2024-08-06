@@ -18,15 +18,15 @@ vcpkg_from_git(
 
 set(OPTIONS "")
 
-if("sqlite" IN_LIST FEATURES)
-    set(OPTIONS "${OPTIONS} -DLOGCPP_SUPPORT_SQLITE=ON")
-endif()
-
+vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
+    FEATURES
+        sqlite LOGCPP_SUPPORT_SQLITE
+)
 
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     NO_CHARSET_FLAG 
-    OPTIONS ${OPTIONS}
+    OPTIONS ${FEATURE_OPTIONS}
 )
 
 vcpkg_cmake_install()
