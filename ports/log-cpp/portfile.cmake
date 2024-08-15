@@ -13,7 +13,7 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL http://git-inc.ovopark.com:6780/system/threadlibrary/log-cpp
-    REF 8f2b342ab563c1291c5b1c982de74073c9e79275 #need to change
+    REF 2d20c9c8f5fc0b845b399283f90f86fed4731469 #need to change
 )
 
 set(OPTIONS "")
@@ -21,6 +21,7 @@ set(OPTIONS "")
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
         sqlite LOGCPP_SUPPORT_SQLITE
+        shared LOGCPP_BUILD_SHARED
 )
 
 vcpkg_cmake_configure(

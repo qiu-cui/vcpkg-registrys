@@ -1,7 +1,7 @@
 {
     "name": "log-cpp",
     "version": "0.0.2",
-    "port-version": 0,
+    "port-version": 1,
     "homepage": "http://git-inc.ovopark.com:6780/system/threadlibrary/log-cpp",
     "description": "A sample C++ library for log",
     "license": "MIT",
@@ -22,6 +22,9 @@
             "dependencies": [
                 "sqlitecpp"
             ]
+        },
+        "shared": {
+            "description": "Enable shared library"
         }
     }
 }
