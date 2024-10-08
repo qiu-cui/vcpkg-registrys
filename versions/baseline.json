@@ -7,6 +7,10 @@
         "log-cpp":{
             "baseline": "0.0.2",
             "port-version": 0
+        },
+        "openssl":{
+            "baseline": "0.0.1",
+            "port-version": 0
         }
     }
 }
