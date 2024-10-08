@@ -21,8 +21,7 @@
   ],
   "features": {
     "rockchip": {
-      "description": "Enable support for Rockchip hardware acceleration",
-      "supports": "arm"
+      "description": "Enable support for Rockchip hardware acceleration"
     }
   }
 }
